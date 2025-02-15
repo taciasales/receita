@@ -17,36 +17,34 @@ body {
   color: hsl(30, 10%, 34%);
   background-color: hsl(30, 54%, 90%);
 }
+
+main{
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+
+}
+.container {
+  width: 80%;
+  margin: 5% auto;
+}
+img {
+  width: 100%;
+  margin: 20px auto;
+}
 .description {
   background-color: hsl(30, 54%, 90%);
- 
   border-radius: 15px;
   border-bottom: none;
   margin: auto 15px;
  
-}
-main, div{
-  width: 80%;
-  margin: 0 auto;
-  background-color: hsl(0, 0%, 100%);
-  
-}
-.lis-description {
-  color: hsl(24, 5%, 18%);
-  
-}
-p, li {
-  padding: 4px 20px 5px 10px;
 }
 section {
   margin: 20px 0;
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding-bottom: 20px;
 }
-ul, ol {
-  padding-left: 29px;
-}
-
 h1 {
   font-size: 3.6rem;
   line-height: 5.4rem;
@@ -67,13 +65,20 @@ h2.info-description {
   margin-bottom: 20px;
   margin-left: 15px;
 }
+p, li {
+  padding: 4px 20px 5px 10px;
+}
+ul, ol {
+  padding-left: 29px;
+}
 table {
   margin: 20px;
   padding: 2% 5%;
 }
 th,td {
-  width: 150px;
+  width: 350px;
   height: 50px;
+  text-align: left;
   border-bottom: 1px solid hsl(30, 18%, 87%);
   margin-left: 15px;
   
@@ -95,13 +100,18 @@ th,td {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } 
 
-@media screen and (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 480px) {
   main, div {
     width: 100%;
     padding: 8%;
   }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
   img {
-    width: 480px;
+    width: 100%;
+    min-width: 375px;
     max-width: 480px;
     
   }
